@@ -9,15 +9,15 @@ using Shopping_App.Token;
 
 namespace Shopping_App.Controllers
 {
-    [Route("controller")]
+    [Route("[controller]")]
     [ApiController]
-    public class Account : Controller
+    public class AccountController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ITokenService _token;
         private readonly IMapper _mapper;
-        public Account(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ITokenService token, IMapper mapper)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ITokenService token, IMapper mapper)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -51,7 +51,7 @@ namespace Shopping_App.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<ApplicationUser>> login(LoginUser loginUser)
         {
-            var userFromDb = await _userManager.Users.FirstOrDefaultAsync(i => (i.UserName == loginUser.EmailOrUserName) || (i.Email == loginUser.EmailOrUserName));
+            var userFromDb = await _userManager.Users.FirstOrDefaultAsync(i =>(i.Email == loginUser.EmailOrUserName));
 
             if (userFromDb == null) return NotFound("No such user is registered");
 
