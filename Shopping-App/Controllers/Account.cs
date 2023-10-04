@@ -28,12 +28,23 @@ namespace Shopping_App.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<ApplicationUser>> register(RegisterUser registerUser)
         {
-            using var hmac = new HMACSHA512();
-
             var newUser = new ApplicationUser
             {
                 Email = registerUser.Email,
-                UserName = registerUser.UserName
+                UserName = registerUser.UserName,
+                AddressLineOne = registerUser.AddressLineOne,
+                AddressLineTwo = registerUser.AddressLineTwo,
+                City = registerUser.City,
+                State = registerUser.State,
+                Country = registerUser.Country,
+                ZipPostalCode = registerUser.ZipPostalCode,
+                DateOfBirth = registerUser.DateOfBirth,
+                Firstname = registerUser.Firstname,
+                HomePhone = registerUser.HomePhone,
+                Lastname = registerUser.Lastname,
+                Title = registerUser.Title,
+                MobilePhone = registerUser.MobilePhone,
+                Token = "",
             };
 
             var result = await _userManager.CreateAsync(newUser, registerUser.Password);
@@ -51,7 +62,7 @@ namespace Shopping_App.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<ApplicationUser>> login(LoginUser loginUser)
         {
-            var userFromDb = await _userManager.Users.FirstOrDefaultAsync(i =>(i.Email == loginUser.EmailOrUserName));
+            var userFromDb = await _userManager.Users.FirstOrDefaultAsync(i =>(i.Email == loginUser.EmailOrUserName) || (i.UserName == loginUser.EmailOrUserName));
 
             if (userFromDb == null) return NotFound("No such user is registered");
 

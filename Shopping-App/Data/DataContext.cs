@@ -12,5 +12,7 @@ namespace Shopping_App.Data
 
         }
 
+        public DbSet<Product> Products { get; set; }
+
     }
 }

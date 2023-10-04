@@ -27,6 +27,6 @@ namespace Shopping_App.Models
 
         public string MobilePhone { get; set; }
 
-        public string Token { get; set; }
+        public string? Token { get; set; }
     }
 }
