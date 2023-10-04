@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\10.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\11.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\12.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\13.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\b1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\b2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\b3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\b4.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\kindle.png",
+      "PackagePath": "staticwebassets\\images\\products\\kindle.png"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\large\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\large\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\large\\f1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\large\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\large\\f2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\large\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\large\\f3.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\large\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KharoufiY\\.NET Projects\\Shopping-App\\Shopping-App\\wwwroot\\images\\products\\panasonic.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\panasonic.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Shopping-App.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Shopping-App.props",
+      "PackagePath": "build\\Shopping-App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Shopping-App.props",
+      "PackagePath": "buildMultiTargeting\\Shopping-App.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Shopping-App.props",
+      "PackagePath": "buildTransitive\\Shopping-App.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

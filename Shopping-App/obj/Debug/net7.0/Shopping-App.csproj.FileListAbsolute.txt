@@ -87,3 +87,4 @@ C:\Users\KharoufiY\.NET Projects\Shopping-App\Shopping-App\bin\Debug\net7.0\runt
 C:\Users\KharoufiY\.NET Projects\Shopping-App\Shopping-App\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\KharoufiY\.NET Projects\Shopping-App\Shopping-App\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\KharoufiY\.NET Projects\Shopping-App\Shopping-App\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\KharoufiY\.NET Projects\Shopping-App\Shopping-App\bin\Debug\net7.0\Shopping-App.staticwebassets.runtime.json
