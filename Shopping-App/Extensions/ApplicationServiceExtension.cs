@@ -21,6 +21,8 @@ namespace Shopping_App.Extensions
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 
 
 
