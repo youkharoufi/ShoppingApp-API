@@ -89,7 +89,7 @@ namespace Shopping_App.Data.Seeding
                 //Boots : 
                 new Product
                 {
-                    ProductName = "Leather Plateform Shoe",
+                    ProductName = "Leather Red Shoe",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 129.99,
                     Quantity = 1,
@@ -100,7 +100,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "Leather Plateform Shoe",
+                    ProductName = "Leather Beige Shoe",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 129.99,
                     Quantity = 1,
@@ -109,7 +109,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "Leather Plateform Shoe",
+                    ProductName = "Leather Blue Shoe",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 129.99,
                     Quantity = 1,
@@ -118,7 +118,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "Leather Plateform Shoe",
+                    ProductName = "Leather Black Shoe",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 129.99,
                     Quantity = 1,
@@ -129,7 +129,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "KODAK PIXPRO Astro Zoom",
+                    ProductName = "KODAK PIXPRO Astro",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 287.93,
                     Quantity = 1,
@@ -153,7 +153,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "Panasonic DMCFZ300K LUMIX",
+                    ProductName = "Panasonic DMCFZ300K",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 729.00,
                     Quantity = 1,
@@ -186,7 +186,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "Panasonic lumix fs16 digicam (red)",
+                    ProductName = "Panasonic lumix fs16",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 129.87,
                     Quantity = 1,
@@ -204,7 +204,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "Panasonic lumix fs16 digicam (grey)",
+                    ProductName = "Panasonic lumix fs25",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 129.87,
                     Quantity = 1,
@@ -224,7 +224,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "SanDisk Extreme PRO 128G ",
+                    ProductName = "SanDisk Extreme PRO ",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 30.21,
                     Quantity = 1,
@@ -233,7 +233,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "SanDisk PRO SDSDXXY-16G-GN4IN ",
+                    ProductName = "SanDisk PRO SDSD",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 30.21,
                     Quantity = 1,
@@ -242,7 +242,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "Sandisk Ultra Flair SDCZ73-256G-G46",
+                    ProductName = "Sandisk Ultra Flair",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 29.21,
                     Quantity = 1,
@@ -251,7 +251,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "SanDisk Extreme PRO SDSDXXY-32G ",
+                    ProductName = "SanDisk Extreme PRO ",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 30.21,
                     Quantity = 1,
@@ -260,7 +260,7 @@ namespace Shopping_App.Data.Seeding
 
                 new Product
                 {
-                    ProductName = "SanDisk PRO SDSDXXY-8G-GN4IN ",
+                    ProductName = "SanDisk PRO SDSD",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Price = 30.21,
                     Quantity = 1,
