@@ -31,5 +31,28 @@ namespace Shopping_App.Controllers
 
             return Ok(product);
         }
+
+        [HttpPost("add-to-cart/{productId}/{userId}")]
+        public async Task<ActionResult<Cart>> addToCart(string productId, string userId)
+        {
+            var cart = await _context.Carts.Where(i=> i.UserId == userId).FirstOrDefaultAsync();
+
+            var product = await _context.Products.FindAsync(productId);
+
+            if(product == null)
+            {
+                return NotFound("No such product in database");
+            }
+
+            if(cart == null)
+            {
+                return BadRequest("Create your cart first");
+            }
+
+            cart.Products.Add(product);
+
+            return Ok(cart);
+        }
+
     }
 }
