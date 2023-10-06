@@ -23,6 +23,14 @@ namespace Shopping_App.Controllers
             return await _context.Carts.Where(o => o.UserId == userId).FirstOrDefaultAsync();
         }
 
+        [HttpGet("product-count/{userId}")]
+        public async Task<ActionResult<int>> productCount(string userId)
+        {
+            var cart = await _context.Carts.Where(o => o.UserId == userId).FirstOrDefaultAsync();
+
+            return Ok(cart.Products.Count());
+        }
+
         [HttpPost("assign-new-cart-to-user/{userId}")]
         public async Task<ActionResult<Cart>> createCart(string userId)
         {
@@ -43,6 +51,37 @@ namespace Shopping_App.Controllers
             }
 
             return Ok(existingCart);
+        }
+
+        [HttpPost("add-quantity-of-a-product/{productId}/{userId}/{newQuantity}")]
+        public async Task<ActionResult<Cart>> addQuantityOfProduct(int productId, string userId, int newQuantity)
+        {
+            var cart = await _context.Carts.Where(h => h.UserId == userId).FirstOrDefaultAsync();
+
+            var product = cart.Products.Where(u => u.ProductId == productId).FirstOrDefault();
+
+            if (product != null)
+            {
+                int productIndex = cart.Products.IndexOf(product);
+
+                Product newProduct = new Product
+                {
+                    ProductId = productId,
+                    Quantity = newQuantity,
+                    ProductName = product.ProductName,
+                    Description = product.Description,
+                    Price = product.Price,
+                    PhotoUrl1 = product.PhotoUrl1,
+
+                };
+
+                cart.Products[productIndex] = newProduct;
+            }
+
+            await _context.SaveChangesAsync();
+
+            return Ok(cart);
+
         }
 
 
