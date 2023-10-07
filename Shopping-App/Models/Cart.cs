@@ -11,14 +11,12 @@ namespace Shopping_App.Models
 
 
         [ForeignKey("Id")]
-        public string? UserId { get; set; }
+        public string UserId { get; set; }
         public ApplicationUser User { get; set; }
 
+        public List<CartItems> CartItems { get; set; } = new List<CartItems>();
 
-        [ForeignKey("ProductId")]
-        public int ProductId { get; set; }
-        public List<Product> Products { get; set; }
 
-        public double TotalPrice { get; set; }
+        public double TotalPrice { get; set; } = 0;
     }
 }
