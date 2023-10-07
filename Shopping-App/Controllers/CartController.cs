@@ -41,7 +41,7 @@ namespace Shopping_App.Controllers
         {
             var existingCart = await _context.Cart.Where(o => o.UserId == userId).FirstOrDefaultAsync();
 
-            if(existingCart == null)
+            if (existingCart == null)
             {
                 //var random = new Random();
                 //int unkownId = random.Next(1, 1000000);
@@ -90,6 +90,17 @@ namespace Shopping_App.Controllers
 
         //}
 
+        [HttpGet("get-all-cart-items/{cartId}")]
+        public async Task<ActionResult<List<CartItems>>> getAllCartItems(int cartId)
+        {
 
+            var cartItems = await _context.CartItems.Where(u => u.CartId == cartId).ToListAsync();
+
+            return Ok(cartItems);
+
+        }
     }
+
+
+    
 }
