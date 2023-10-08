@@ -28,6 +28,7 @@ namespace Shopping_App.Models
 
         public string ItemPhotoUrl { get; set; }
 
-        public string PhotoUrl { get; set; }
+        public double ItemTotal { get; set; }
+
     }
 }

@@ -60,35 +60,18 @@ namespace Shopping_App.Controllers
             return Ok(existingCart);
         }
 
-        //[HttpPost("add-quantity-of-a-product/{productId}/{userId}/{newQuantity}")]
-        //public async Task<ActionResult<Cart>> addQuantityOfProduct(int productId, string userId, int newQuantity)
-        //{
-        //    var cart = await _context.Cart.Where(h => h.UserId == userId).FirstOrDefaultAsync();
+        [HttpPost("change-quantity-of-a-product/{itemId}/{newQuantity}")]
+        public async Task<ActionResult<Cart>> addQuantityOfProduct(int itemId, int newQuantity)
+        {
+            var cartItem = await _context.CartItems.Where(u => u.ItemId == itemId).FirstOrDefaultAsync();
 
-        //    var product = await _context.Products.Where(u => u.ProductId == productId).FirstOrDefaultAsync();
+            cartItem.ItemQuantity = newQuantity;
 
-        //    if (product != null)
-        //    {
-        //        int productIndex = cart.CartItems.IndexOf(product);
+            await _context.SaveChangesAsync();
 
-        //        var cartItem = new CartItems
-        //        {
+            return Ok(cartItem);
 
-        //            ItemName = product.ProductName,
-        //            Description = product.Description,
-        //            ItemPhotoUrl = product.PhotoUrl1,
-        //            ItemPrice = product.Price,
-        //            ItemQuantity = product.Quantity,
-        //        };
-
-        //        cart.CartItems[productIndex] = newProduct;
-        //    }
-
-        //    await _context.SaveChangesAsync();
-
-        //    return Ok(cart);
-
-        //}
+        }
 
         [HttpGet("get-all-cart-items/{cartId}")]
         public async Task<ActionResult<List<CartItems>>> getAllCartItems(int cartId)
@@ -99,8 +82,47 @@ namespace Shopping_App.Controllers
             return Ok(cartItems);
 
         }
+
+        [HttpGet("get-one-cart-item/{itemId}")]
+        public async Task<ActionResult<List<CartItems>>> getOneCartItem(int itemId)
+        {
+
+            var cartItem = await _context.CartItems.Where(u => u.ItemId == itemId).FirstOrDefaultAsync();
+
+            return Ok(cartItem);
+
+        }
+
+        [HttpGet("get-cart-total/{cartId}")]
+        public async Task<ActionResult<double>> GetCartTotal(int cartId)
+        {
+            var cart = await _context.Cart.Include(c => c.CartItems)
+                                          .Where(u => u.CartId == cartId)
+                                          .FirstOrDefaultAsync();
+
+            if (cart == null)
+            {
+                return NotFound($"Cart with ID {cartId} not found.");
+            }
+
+            double total = 0;
+
+            foreach (var item in cart.CartItems)
+            {
+                item.ItemTotal = item.ItemPrice * item.ItemQuantity;
+                total += item.ItemTotal;
+            }
+
+            cart.TotalPrice = total;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(cart.TotalPrice);
+        }
+
+
     }
 
 
-    
+
 }

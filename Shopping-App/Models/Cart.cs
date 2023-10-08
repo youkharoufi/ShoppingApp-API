@@ -17,6 +17,6 @@ namespace Shopping_App.Models
         public List<CartItems> CartItems { get; set; } = new List<CartItems>();
 
 
-        public double TotalPrice { get; set; } = 0;
+        public double TotalPrice { get; set; }
     }
 }
