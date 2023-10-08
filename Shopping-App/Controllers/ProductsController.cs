@@ -32,8 +32,8 @@ namespace Shopping_App.Controllers
             return Ok(product);
         }
 
-        [HttpPost("add-to-cart/{productId}/{userId}")]
-        public async Task<ActionResult<Cart>> addToCart(int productId, string userId)
+        [HttpPost("add-to-cart/{productId}/{userId}/{quantity}")]
+        public async Task<ActionResult<Cart>> addToCart(int productId, string userId, int quantity)
         {
             var cart = await _context.Cart.Where(i=> i.UserId == userId).FirstOrDefaultAsync();
 
@@ -62,14 +62,14 @@ namespace Shopping_App.Controllers
                 Description = product.Description,
                 ItemPhotoUrl = product.PhotoUrl1,
                 ItemPrice = product.Price,
-                ItemQuantity = product.Quantity,
+                ItemQuantity = quantity,
             };
 
 
                 var cartIn = await _context.CartItems.Where(o => o.ItemName == product.ProductName).FirstOrDefaultAsync();
                 if(cartIn != null)
                 {
-                    cartIn.ItemQuantity = cartIn.ItemQuantity + 1;
+                    cartIn.ItemQuantity = cartIn.ItemQuantity + quantity;
                     await _context.SaveChangesAsync();
                     return Ok(cart);
                 }
