@@ -1,5 +1,5 @@
 ## Project type
-This is a backend API that works in pair with the frontend user interface  ```Shopping-App-UI``` , which means they have to be run simultaneously. Below are the details to how to consume the app :
+This is a backend API that works in pair with the frontend user interface  ```Shopping-App-UI``` (you can find it in my repositories) , which means they have to be run simultaneously. Below are the details to how to consume the app :
 
 ## ✨ How To Use the app ✨
 
