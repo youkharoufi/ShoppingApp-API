@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Reflection.Metadata.Ecma335;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shopping_App.Data;
 using Shopping_App.Models;
@@ -119,6 +120,34 @@ namespace Shopping_App.Controllers
 
             return Ok(cart.TotalPrice);
         }
+
+
+        [HttpDelete("delete-cart-item/{itemId}")]
+        public async Task<ActionResult> deleteCartItem(int itemId)
+        {
+            try
+            {
+                var item = await _context.CartItems.FindAsync(itemId);
+
+                if (item == null)
+                {
+                    return NotFound("No such item in database");
+                }
+
+                _context.Entry(item).State = EntityState.Deleted; // Explicitly set the state
+                _context.CartItems.Remove(item);
+
+                await _context.SaveChangesAsync();
+
+                return Ok("item deleted");
+            }
+            catch (Exception ex)
+            {
+                // This is a generic error handler, you might want to log the exception and provide more specific error messages based on the exception type
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
 
 
     }

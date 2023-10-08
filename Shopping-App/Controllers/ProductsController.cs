@@ -65,6 +65,17 @@ namespace Shopping_App.Controllers
                 ItemQuantity = product.Quantity,
             };
 
+
+                var cartIn = await _context.CartItems.Where(o => o.ItemName == product.ProductName).FirstOrDefaultAsync();
+                if(cartIn != null)
+                {
+                    cartIn.ItemQuantity = cartIn.ItemQuantity + 1;
+                    await _context.SaveChangesAsync();
+                    return Ok(cart);
+                }
+
+          
+
             cart.CartItems.Add(cartItem);
 
             try
