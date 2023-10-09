@@ -91,7 +91,19 @@ namespace Shopping_App.Controllers
             return Ok(cart);
         }
 
-       
+        [HttpGet("filter-by-name/{name}")]
+        public async Task<ActionResult<List<Product>>> filterProducts(string name)
+        {
+            if(name == "" || name == null) return await _context.Products.ToListAsync();
+
+            var products = await _context.Products.Where(l => l.ProductName.Contains(name)).ToListAsync();
+
+            return Ok(products);
+        }
+
+
 
     }
+
+
 }
